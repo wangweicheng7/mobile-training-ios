@@ -1,0 +1,8 @@
+osx_image: xcode11.3
+language: swift
+xcode_project: MiniWeibo.xcodeproj
+# script: xcodebuild -project MiniWeibo.xcodeproj -scheme "MiniWeibo" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11,OS=latest'
+xcode_project: MiniWeibo.xcodeproj # path to your xcodeproj folder
+xcode_scheme: MiniWeiboTests
+xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
+
