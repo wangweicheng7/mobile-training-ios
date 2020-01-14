@@ -10,5 +10,6 @@ before_install:
   - brew update
   - brew outdated carthage || brew upgrade carthage
 before_script:
+  - cd src/Basic/project/MiniWeibo
   - carthage bootstrap
 
