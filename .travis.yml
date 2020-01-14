@@ -2,7 +2,13 @@ osx_image: xcode11.3
 language: swift
 xcode_project: MiniWeibo.xcodeproj
 # script: xcodebuild -project MiniWeibo.xcodeproj -scheme "MiniWeibo" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 11,OS=latest'
-xcode_project: MiniWeibo.xcodeproj # path to your xcodeproj folder
+xcode_project: src/Basic/project/MiniWeibo/MiniWeibo.xcodeproj # path to your xcodeproj folder
 xcode_scheme: MiniWeiboTests
-xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
+xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone 11
+before_install:
+  - xcodebuild -showsdks
+  - brew update
+  - brew outdated carthage || brew upgrade carthage
+before_script:
+  - carthage bootstrap
 

@@ -46,6 +46,35 @@ class ViewController: UIViewController {
                 self?.navigationController?.pushViewController(vc, animated: true)
             }
         }
+        
+        
+        let group = DispatchGroup()
+        
+        let queue = DispatchQueue(label: "com.caifan.shabi")
+        
+        group.enter()
+        queue.async { [weak self] in
+            print("first enter")
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+                print("first leave")
+                group.leave()
+            }
+            
+        }
+        
+        group.enter()
+        queue.async { [weak self] in
+            print("second enter")
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+                print("second leave")
+                group.leave()
+            }
+            
+        }
+        group.notify(queue: queue) {
+            print("group exc")
+        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

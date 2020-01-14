@@ -1,5 +1,7 @@
 # Mobile Training: iOS
 
+[![Build Status](https://travis-ci.org/wangweicheng7/mobile-training-ios.svg?branch=develop%2Fbasic-weicheng)](https://travis-ci.org/wangweicheng7/mobile-training-ios)
+
 This is an iOS training for different stage of people. The goal is to let people can learn iOS Developer and working on the project ASAP.
 
 ## Prerequisites
