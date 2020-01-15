@@ -40,9 +40,11 @@ class ViewController: UIViewController {
             }
         }
         
-        viewModel.didSelecteWeibo = { [weak self] ip in
+        viewModel.didSelecteWeibo = { [weak self] model in
             DispatchQueue.main.async {
-                let vc = UIViewController()
+                let vm = DetailViewModel(HttpRequest(), weiboModel: model)
+                let vc = DetailViewController()
+                vc.viewModel = vm
                 self?.navigationController?.pushViewController(vc, animated: true)
             }
         }
@@ -99,5 +101,9 @@ extension ViewController: UITableViewDataSource {
         let model = dataSource[indexPath.row]
         cell.set(model)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.didSelectRow(at: indexPath)
     }
 }
