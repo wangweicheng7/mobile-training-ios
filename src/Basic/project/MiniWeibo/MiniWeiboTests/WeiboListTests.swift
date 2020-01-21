@@ -13,22 +13,6 @@ import Nimble
 
 @testable import MiniWeibo
 
-class WeiboListTests: XCTestCase {
-    
-    override func setUp() {
-        
-    }
-    
-    override func tearDown() {
-        
-    }
-    
-    func testExample() {
-        
-    }
-
-}
-
 extension XCTestCase {
     func viewTester(_ file : String = #file, _ line : Int = #line) -> KIFUIViewTestActor {
         return KIFUIViewTestActor(inFile: file, atLine: line, delegate: self)
