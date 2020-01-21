@@ -9,6 +9,7 @@
 import XCTest
 import Quick
 import Nimble
+import KIF
 
 @testable import MiniWeibo
 

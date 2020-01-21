@@ -1,3 +1,5 @@
+github "kif-framework/KIF"
+
 github "Quick/Quick"
 
 github "Quick/Nimble"
