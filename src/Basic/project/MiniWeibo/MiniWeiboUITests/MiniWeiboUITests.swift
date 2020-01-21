@@ -32,7 +32,7 @@ class MiniWeiboUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    func testTableViewOnLoad() {
+        func testTableViewOnLoad() {
         
         // Test Before Search
         let app = XCUIApplication()

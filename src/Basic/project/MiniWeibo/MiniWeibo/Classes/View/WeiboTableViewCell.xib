@@ -271,6 +271,9 @@
                     <constraint firstItem="vTa-LZ-fIQ" firstAttribute="leading" secondItem="Pae-O2-muY" secondAttribute="leading" id="vsB-Bv-nmT"/>
                 </constraints>
             </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="Green Cell Identifier">
+                <bool key="isElement" value="YES"/>
+            </accessibility>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="avatarImageView" destination="ZrC-0Y-0Iu" id="hi6-Ld-5XN"/>

@@ -13,7 +13,6 @@
 		872D8D2A23CEF04C0025CF6B /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872D8D2923CEF04C0025CF6B /* DetailHeaderView.swift */; };
 		872D8D2C23CEF05B0025CF6B /* DetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 872D8D2B23CEF05B0025CF6B /* DetailHeaderView.xib */; };
 		872D8D2E23CF09040025CF6B /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872D8D2D23CF09040025CF6B /* CommentModel.swift */; };
-		872D8D3423D579E20025CF6B /* TestCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872D8D3323D579E20025CF6B /* TestCaseTests.swift */; };
 		872D8D3723D6A8EF0025CF6B /* WeiboListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872D8D3623D6A8EF0025CF6B /* WeiboListTests.swift */; };
 		872EE06723BED88000B3E31E /* Error+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872EE06623BED88000B3E31E /* Error+App.swift */; };
 		874C000123A9D07F009437CD /* MiniWeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C000023A9D07F009437CD /* MiniWeiboTests.swift */; };
@@ -59,7 +58,6 @@
 		872D8D2B23CEF05B0025CF6B /* DetailHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailHeaderView.xib; sourceTree = "<group>"; };
 		872D8D2D23CF09040025CF6B /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
 		872D8D2F23D5797C0025CF6B /* MiniWeiboTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MiniWeiboTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		872D8D3323D579E20025CF6B /* TestCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCaseTests.swift; sourceTree = "<group>"; };
 		872D8D3623D6A8EF0025CF6B /* WeiboListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboListTests.swift; sourceTree = "<group>"; };
 		872EE06623BED88000B3E31E /* Error+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+App.swift"; sourceTree = "<group>"; };
 		874C000023A9D07F009437CD /* MiniWeiboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniWeiboTests.swift; sourceTree = "<group>"; };
@@ -236,7 +234,6 @@
 				87FBC6DC23BDC98F00D6F41F /* ViewModelTests.swift */,
 				874C000223A9D07F009437CD /* Info.plist */,
 				872D8D2F23D5797C0025CF6B /* MiniWeiboTests-Bridging-Header.h */,
-				872D8D3323D579E20025CF6B /* TestCaseTests.swift */,
 				872D8D3623D6A8EF0025CF6B /* WeiboListTests.swift */,
 			);
 			path = MiniWeiboTests;
@@ -467,7 +464,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				872D8D3723D6A8EF0025CF6B /* WeiboListTests.swift in Sources */,
-				872D8D3423D579E20025CF6B /* TestCaseTests.swift in Sources */,
 				874C000123A9D07F009437CD /* MiniWeiboTests.swift in Sources */,
 				87FBC6DD23BDC98F00D6F41F /* ViewModelTests.swift in Sources */,
 			);

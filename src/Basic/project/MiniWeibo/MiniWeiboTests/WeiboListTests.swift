@@ -28,3 +28,21 @@ class WeiboListTests: XCTestCase {
     }
 
 }
+
+extension XCTestCase {
+    func viewTester(_ file : String = #file, _ line : Int = #line) -> KIFUIViewTestActor {
+        return KIFUIViewTestActor(inFile: file, atLine: line, delegate: self)
+    }
+
+    func system(_ file : String = #file, _ line : Int = #line) -> KIFSystemTestActor {
+        return KIFSystemTestActor(inFile: file, atLine: line, delegate: self)
+    }
+}
+
+class WeiboListTests: KIFTestCase {
+    
+    func testGreenCellWithIdentifier() {
+        viewTester().usingIdentifier("Green Cell Identifier").tap()
+//        viewTester().usingIdentifier("Selected: Green Color").waitForView()
+    }
+}
